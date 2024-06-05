@@ -45,10 +45,10 @@ const CreateDevice = observer(({ show, onHide }) => {
         formData.append('typeId', device.selectedType.id)
         formData.append('info', JSON.stringify(info))
 
-        console.log('FormData entries:');
-        for (let pair of formData.entries()) {
-            console.log(`${pair[0]}: ${pair[1]}`);
-        }
+        // console.log('FormData entries:');
+        // for (let pair of formData.entries()) {
+        //     console.log(`${pair[0]}: ${pair[1]}`);
+        // }
 
         createDevice(formData).then(data => onHide())
 
