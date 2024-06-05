@@ -3,26 +3,26 @@ import { makeAutoObservable } from "mobx"
 export default class DeviceStore {
     constructor() {
         this._types = [
-            { id: 1, name: 'Тепло и звукоизоляция' },
-            { id: 2, name: 'Упаковка и транспортировка ' },
-            { id: 3, name: 'Сопутствующие товары' },
-            { id: 4, name: 'Для спорта и отдыха' }
+            // { id: 1, name: 'Тепло и звукоизоляция' },
+            // { id: 2, name: 'Упаковка и транспортировка ' },
+            // { id: 3, name: 'Сопутствующие товары' },
+            // { id: 4, name: 'Для спорта и отдыха' }
         ]
         this._brands = [
-            { id: 1, name: 'Samsung' },
-            { id: 2, name: 'Apple' },
-            { id: 3, name: 'Xiaomi' },
-            { id: 4, name: 'Nokia' },
+            // { id: 1, name: 'Samsung' },
+            // { id: 2, name: 'Apple' },
+            // { id: 3, name: 'Xiaomi' },
+            // { id: 4, name: 'Nokia' },
         ]
         this._devices = [
-            { id: 1, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
-            { id: 2, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
-            { id: 3, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
-            { id: 4, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
-            { id: 5, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
-            { id: 6, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
-            { id: 7, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
-            { id: 8, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` }
+            // { id: 1, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
+            // { id: 2, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
+            // { id: 3, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
+            // { id: 4, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
+            // { id: 5, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
+            // { id: 6, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
+            // { id: 7, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` },
+            // { id: 8, name: 'Iphone 12 pro', price: 25000, rating: 5, img: `https://c.dns-shop.ru/thumb/st4/fit/500/500/80e5f04113d7955e3fae82319040e476/534489f34bc464e4cf68522999686645c9ac3ea0cca7faa03cef57480237d900.jpg.webp` }
         ]
         this._selectedType = {} // поле в котором храниться выделенные Type
         this._selectedBrand = {} // поле в котором храниться выделенные Brand
